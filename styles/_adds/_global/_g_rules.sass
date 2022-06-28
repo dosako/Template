@@ -1,0 +1,18 @@
+@use './_components/' as *
+
+html
+    scroll-behavior: smooth
+
+body 
+    background-color: #fff
+
+    font: 100 14px/1.5 "Raleway", sans-serif
+    color: $text-color
+
+    @include font-smooth
+
+*, *.before, *.after 
+    box-sizing: border-box
+
+body, p, h1, h2, h3, h4, h5, h6
+    margin: 0

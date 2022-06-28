@@ -1,0 +1,26 @@
+.trying h1
+    font:
+        family: Pragmaticashadowc
+        size: 50px
+    color: #00fffb
+    
+.svg-snowflake-dims
+    width: 34.637px
+    height: 34.637px
+    fill: red
+    background-color: #fff
+
+.my-icon 
+    fill: red
+
+    svg
+        $size: 200px
+        width: $size
+        height: $size
+        transition: transform 10s, fill 10s
+
+        &:hover 
+            transform: rotate(2*360deg)
+            fill: blue
+            cursor: pointer
+

@@ -1,0 +1,28 @@
+@use './variables' as *
+
+@mixin font-smooth 
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+
+@mixin flex-center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+@mixin flex-spc_between
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+@mixin center-pos
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+@mixin short_anim($props...)
+    @for $i from 0 to length($props)
+        transition: #{nth($props, $i + 1)}, $short-anim-time
+@mixin long_anim($props...)
+    @for $i from 0 to length($props)
+        transition: #{nth($props, $i + 1)}, $long-anim-time

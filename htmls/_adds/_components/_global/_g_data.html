@@ -1,0 +1,6 @@
+{% macro pctrs(path, ext, alt, class="pctr") %}
+    <picture class="{{class}}">
+        <source srcset="{{path}}.webp" type="image/webp">
+        <img class="{{class}}" src="{{path}}.{{ext}}" alt="{{alt}}">
+    </picture>
+{% endmacro %}
