@@ -1,0 +1,81 @@
+@font-face {
+  font-family: Neonderthaw;
+  font-display: swap;
+  src: url("../fonts/Neonderthaw-Regular.woff2") format("woff2"), url("../fonts/Neonderthaw-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Pragmaticashadowc;
+  font-display: swap;
+  src: url("../fonts/Pragmaticashadowc-italic.woff2") format("woff2"), url("../fonts/Pragmaticashadowc-italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  font: 100 14px/1.5 "Raleway", sans-serif;
+  color: #6c7279;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*.before,
+*.after {
+  box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+footer {
+  font-size: 5em;
+}
+
+header {
+  font-size: 10em;
+}
+
+.trying h1 {
+  font-family: Pragmaticashadowc;
+  font-size: 50px;
+  color: #00fffb;
+}
+
+.svg-snowflake-dims {
+  width: 34.637px;
+  height: 34.637px;
+  fill: red;
+  background-color: #fff;
+}
+
+.my-icon {
+  fill: red;
+}
+
+.my-icon svg {
+  width: 200px;
+  height: 200px;
+  transition: transform 10s, fill 10s;
+}
+
+.my-icon svg:hover {
+  transform: rotate(720deg);
+  fill: blue;
+  cursor: pointer;
+}
